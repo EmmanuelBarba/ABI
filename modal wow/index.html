@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>jQuery Modally (Nested Modal) Demo</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+       
+        <style>
+            body{
+                overflow: hidden;
+            }
+            html, body {
+                font-family: 'Poppins', sans-serif;
+                color: #1d1d1d;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            body main {
+                transition: all 250ms ease-in-out;
+                filter: blur(0px);
+            }
+
+            body.modally-open main {
+                filter: blur(5px);
+            }
+
+             
+            .table {
+                display: table;
+                width: 100%;
+                  
+                
+            }
+ 
+            
+            .cell {
+                display: table-cell;
+                vertical-align: middle;
+                 
+            }
+
+            .cell p{
+                width: 50%;
+                margin: 0 auto;
+            }
+            
+            .hero {
+                background-image:url(soaking-it-all-in_t20_6wKkZv.jpg.png);
+                background-size: cover;
+                color: white;
+            }
+
+            .hero .table {
+                min-height: 100vh;
+            }
+
+            .hero .table .cell {
+                padding-top: 40px;
+                padding-bottom: 40px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 100px;
+                line-height: 100px;
+                 font-weight: bold;
+                margin-top: -299px;
+                margin-bottom: 20px;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .hero .button {
+                margin-top: 20px;
+            }
+
+            .modal-title {
+                margin-top: -30px;
+                margin-bottom: 8px;
+                padding-right: 100px;
+                letter-spacing: 1px;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .button {
+                cursor: pointer;
+                height: 56px;
+                line-height: 54px;
+                padding-left: 24px;
+                padding-right: 24px;
+                box-sizing: border-box;
+                display: inline-block;
+                border-radius: 4px;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                vertical-align: middle;
+                font-weight: bold;
+                transition: all 250ms ease-in-out;
+                border: solid 1px #ff9a9e;
+                font-size: 12px;
+                letter-spacing: 2px;
+                text-transform: uppercase; 
+                color: #333;
+                background: white;
+            }
+
+            .button.white {
+                 
+                border: solid 1px white;
+            }
+
+            .button.small {
+                height: 44px;
+                line-height: 42px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            
+
+            .button.gradient.small {
+                line-height: 44px;
+            }
+
+            .button.icon i {
+                margin-right: 8px;
+            }
+
+            .modally-wrap.open:not(.last) {
+                filter: blur(5px);
+            }
+
+            
+            .modally .button-wrap {
+                text-align: right;
+            }
+
+            .modally .button-wrap .button {
+                margin-left: 16px;
+            }
+        </style>
+
+        <link rel="stylesheet" href="css/jquery.modally.css">
+       
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <section class="hero">
+                    <div class="table">
+                        <div class="cell">
+                            <h1>Dialog Box</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ad expedita, dolore, cupiditate accusantium, labore sapiente nam molestias nemo molestiae deleniti magni. Fugiat consectetur aperiam veniam provident nemo magni iure, unde velit temporibus maxime, vero in repellat reiciendis voluptates. Rerum exercitationem corrupti ducimus neque, unde dolorum quidem. Voluptatum amet, quos!
+                            </p>
+                            <a href="#lorem" target="_modal" class="button white">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="lorem" modally-max_width="1000">
+                    <h1 class="modal-title">Hey there!</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Yes I am this lazy.</p>
+                    <div class="button-wrap">
+                        <a target="_modal:close" class="button small">Close me!</a><a href="#ipsum" target="_modal" class="button gradient small">Open 2nd one!</a>
+                    </div>
+                </div>
+                <div id="ipsum">
+                    <h1 class="modal-title">You still here?!</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Yes I am this lazy.</p>
+
+                    <div class="button-wrap">
+                        <a class="button small modally-close">Close me!</a><a href="#dolor" target="_modal:open" class="button gradient small">Open 3rd one!</a>
+                    </div>
+                </div>
+
+                <div id="dolor" modally-max_width="500">
+                    <h1 class="modal-title serif">I'm the last one.</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Yes I am this lazy.</p>
+
+                    <div class="button-wrap">
+                        <a href="#dolor" target="_modal:close" class="button gradient small">Close me!</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.modally.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                $('#ipsum').modally('ipsum', {max_width: 800});
+                $('#lorem').modally();
+                $('#dolor').modally();
+            });
+        </script>
+    </body>
+</html>
