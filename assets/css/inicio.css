@@ -53,6 +53,13 @@ nav > div {
     text-align: center;
 }
 
+.nav-header {
+	z-index: 50;
+    overflow: hidden;
+    position: sticky;
+    top:10px;
+}
+
 nav.nav-header > div {
     width: 33%;
 }
