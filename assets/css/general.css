@@ -138,10 +138,11 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 5px black;
     cursor: pointer;
+    border: 5px solid white;
 }
 
 .expandible:hover {
-    background-color: #875fff;
+    border-color: #875fff;
 }
 
 .expandible p {
