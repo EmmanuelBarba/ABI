@@ -143,3 +143,16 @@ footer {
 .expandible:hover {
     background-color: #875fff;
 }
+
+.expandible p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.expandible > div {
+    margin-top: 25px;
+}
+
+.oculto {
+    display: none;
+}
