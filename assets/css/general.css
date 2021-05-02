@@ -117,6 +117,11 @@ footer {
     border: 2px solid black;
     border-radius: 5px;
     padding: 30px;
+    display: inline-block;
+    height: 300px;
+    width: 350px;
+    margin: 10px;
+    text-align: center;
 }
 
 .tarjeta img.icono {
