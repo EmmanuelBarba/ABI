@@ -1,14 +1,7 @@
-let preguntas = document.getElementsByClassName("expandible");
-
-for (preg of preguntas) {
-    let resp = preg.getElementsByClassName("oculto")[0]
-
-    preg.onclick = function() {
-        if (resp.className == "oculto") {
-            resp.className = "";
-        } else {
-            resp.className = "oculto";
-        }
+for (let pregunta of document.getElementsByClassName("expandible")) {
+    let respuesta = pregunta.getElementsByClassName("oculto")[0];
+    pregunta.onclick = function() {
+        respuesta.classList.toggle("oculto");
     };
 }
 
