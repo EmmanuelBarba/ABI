@@ -1,0 +1,8 @@
+main {
+    margin-bottom: 20vh;
+    height: 32vh;
+}
+
+main > h1 {
+    margin-bottom: 4vh;
+}
