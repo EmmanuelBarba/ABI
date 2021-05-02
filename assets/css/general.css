@@ -50,6 +50,10 @@ nav a:hover {
     color: #875fff;
 }
 
+nav a.seleccionado {
+    color: #875fff;
+}
+
 nav > div {
     width: 25%;
     text-align: center;
