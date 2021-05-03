@@ -146,12 +146,8 @@ footer {
 }
 
 .expandible p {
-    margin: 10px 0;
     font-size: 1.2em;
-}
-
-.expandible > div {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .oculto {
