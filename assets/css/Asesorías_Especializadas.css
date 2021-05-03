@@ -11,7 +11,7 @@ section {
 
 .card {
     display: grid;
-    grid-template-columns: 50vh;
+    grid-template-columns: 300px;
     grid-template-rows: 92px 280px 50px;
     grid-template-areas: "image" "text" "mail";
     border-radius: 18px;
