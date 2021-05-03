@@ -64,6 +64,7 @@ nav > div {
     overflow: hidden;
     position: sticky;
     top:10px;
+    border-radius: 10px;
 }
 
 nav.nav-header > div {
