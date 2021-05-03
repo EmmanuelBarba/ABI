@@ -9,59 +9,83 @@ section {
     justify-content: center;
 }
 
-section .tarjeta{
-    margin: .7em;
-    width: 50vh;
-    height: 70vh;
-    overflow: hidden;
-    border-radius: 10px;
+.card {
+    display: grid;
+    grid-template-columns: 50vh;
+    grid-template-rows: 15vh 45vh 10vh;
+    grid-template-areas: "image" "text" "mail";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: Info;
     text-align: center;
-    box-shadow: 0px 2px 2px rgba(0,0,0,.5);
-    transition: all 0.25s;
+    transition: all 0.5s;
+    margin: 30px;
 }
 
-section .tarjeta:hover{
-    transform: translatey(-12px);
-    box-shadow: 0 12px 16px rgba(0,0,0,.7);
-}
+.card-image {
+    grid-area: image;
+  }
+  .card-text {
+    grid-area: text;
+  }
+  .card-mail {
+    grid-area: mail; 
+  }
 
-.icono, .tarjeta h2{
-    margin: 2vh;
-    margin-bottom: 0;
-    padding: 0;
-}
+  .card-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+  }
 
-.tarjeta h2{
-    font-family: Info;
-    color: #121933;
-    font-weight: 600;
-}
+  .card-image img {
+    margin-top: 1vh;
+    width: 28%;
+  }
 
-.tarjeta ul{
-    margin-top: 5vh;
-    padding: 0;
-    font-family: Info;
-    color: #7f8183;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.8;
-}
+  .card-text {
+    grid-area: text;
+    margin: 25px;
+  }
+  
+  .card-text p {
+    color: rgb(87, 87, 87);
+    font-size:15px;
+    font-weight: 300;
+    margin: 1vh;
+  }
+  .card-text h2 {
+    margin-top:0px;
+    margin-bottom: 4vh;
+    font-size:28px;
+  }
 
-.tarjeta .mail, .tarjeta a{
-    margin-top: 3vh;
-    padding: 0;
-}
+  .card-mail {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #1fc058;
+  }
 
-.tarjeta a{
+  .card-mail a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding:20px;
     text-decoration: none;
-    font-family: Info;
-    color:#2f1e77;
-    font-weight:900;
-}
+    transform: all 0.5s;
+  }
 
-.tarjeta a:hover{
-    color:#000000;
-}
+  .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,.7);
+  }
+
+  .card-mail:hover{
+    background: #3a37d8;
+  }
 
 main {
     margin-left: 20%;
