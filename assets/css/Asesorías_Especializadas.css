@@ -38,6 +38,7 @@ section {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     overflow: hidden;
+    background-color: rgb(194, 194, 194);
   }
 
   .card-image img {
