@@ -10,7 +10,7 @@ section {
 section .tarjeta{
     margin: .7em;
     width: 50vh;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
     border-radius: 10px;
     text-align: center;
@@ -21,6 +21,22 @@ section .tarjeta{
 section .tarjeta:hover{
     transform: translatey(-12px);
     box-shadow: 0 12px 16px rgba(0,0,0,.7);
+}
+
+.icono, .tarjeta h2{
+    margin: 2vh;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.tarjeta ul{
+    margin-top: 5vh;
+    padding: 0;
+}
+
+.tarjeta .mail, .tarjeta a{
+    margin-top: 3vh;
+    padding: 0;
 }
 
 main {
