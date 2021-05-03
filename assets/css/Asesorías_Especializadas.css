@@ -1,3 +1,5 @@
+@import url("../fonts/fonts.css");
+
 section {
     margin: 0 1em;
     width: 100%;
@@ -10,7 +12,7 @@ section {
 section .tarjeta{
     margin: .7em;
     width: 50vh;
-    height: 60vh;
+    height: 70vh;
     overflow: hidden;
     border-radius: 10px;
     text-align: center;
@@ -29,14 +31,36 @@ section .tarjeta:hover{
     padding: 0;
 }
 
+.tarjeta h2{
+    font-family: Info;
+    color: #121933;
+    font-weight: 600;
+}
+
 .tarjeta ul{
     margin-top: 5vh;
     padding: 0;
+    font-family: Info;
+    color: #7f8183;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 .tarjeta .mail, .tarjeta a{
     margin-top: 3vh;
     padding: 0;
+}
+
+.tarjeta a{
+    text-decoration: none;
+    font-family: Info;
+    color:#2f1e77;
+    font-weight:900;
+}
+
+.tarjeta a:hover{
+    color:#000000;
 }
 
 main {
