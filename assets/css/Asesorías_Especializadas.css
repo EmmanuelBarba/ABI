@@ -1,5 +1,6 @@
 section {
     margin: 0 1em;
+    width: 100%;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
