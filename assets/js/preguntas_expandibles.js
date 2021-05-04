@@ -8,4 +8,14 @@ $(function () {
         $(respuesta).slideToggle();
         };
     }
+    
+    $('#myDiv').floatingWhatsApp({
+        phone: '523781080994',
+        popupMessage: 'En qué podemos ayudarte?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Hola!',
+        position: "right"
+    });
 });
