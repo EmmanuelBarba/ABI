@@ -30,10 +30,10 @@ header {
     justify-content: space-between;
     align-items: center;
     /*! padding: 5px; */
-    padding-left: 30px;
+    padding-left: 25px;
     /*! left: 2px; */
     /*! margin: 46px; */
-    padding-right: 20px;
+    padding-right: 25px;
 }
 
 .logo_cualtos {
@@ -162,7 +162,7 @@ footer {
     color: #fff;
     text-align: left;
     padding: 17px;
-    margin: 25px;
+    margin: 25px auto;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
     cursor: pointer;
@@ -195,6 +195,7 @@ footer {
 .expandible ul {
     margin: 15px;
     margin-bottom: 0;
+    margin-left: 20px;
 }
 
 .expandible li {
@@ -215,4 +216,26 @@ li span {
     color: cyan;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin: 0px 4%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 0px 0%;
+    }
+
+    nav {
+        margin: 0;
+        border-radius: 0px !important;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
 }
