@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i&amp;display=swap');
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700,800&amp;display=swap');
-@import url("../fonts/fonts.css");
+@import url('../fonts/fonts.css');
 
-html,body {
+html,
+body {
     font-family: 'Roboto';
     /* font-family: 'Barlow Condensed'; */
     scroll-behavior: smooth;
@@ -16,7 +17,8 @@ html,body {
 
 body {
     margin: 0px 8%;
-    background-image: linear-gradient(rgb(22 17 60 / 50%), rgb(22 17 60)), url("../img/cualtos_auditorio.jpg");
+    background-image: linear-gradient(rgb(22 17 60 / 50%), rgb(22 17 60)),
+        url('../img/cualtos_auditorio.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +27,7 @@ body {
 
 header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     /*! padding: 5px; */
     padding-left: 30px;
@@ -34,7 +36,7 @@ header {
     padding-right: 20px;
 }
 
-.logo_cualtos{
+.logo_cualtos {
     height: 100px;
     width: auto;
 }
@@ -47,7 +49,7 @@ header > img {
 }
 
 nav {
-    background-image: url("../img/liston_pag.png");
+    background-image: url('../img/liston_pag.png');
     background-size: cover;
     height: 65px;
     display: flex;
@@ -80,14 +82,14 @@ nav > div {
 }
 
 .nav-header {
-	z-index: 50;
+    z-index: 50;
     overflow: hidden;
     position: sticky;
-    top:10px;
+    top: 10px;
     border-radius: 5px;
-	/*! border: 2px solid; */
-	position: relative;
-	top: -8px;
+    /*! border: 2px solid; */
+    position: relative;
+    top: -8px;
 }
 
 nav.nav-header > div {
@@ -120,7 +122,8 @@ footer {
 }
 
 .icon-text img {
-    filter: invert(22%) sepia(80%) saturate(2152%) hue-rotate(208deg) brightness(91%) contrast(94%);
+    filter: invert(22%) sepia(80%) saturate(2152%) hue-rotate(208deg)
+        brightness(91%) contrast(94%);
     margin: auto 20px;
     /*! color: blue; */
     /*! background-color: blanchedalmond; */
@@ -164,14 +167,14 @@ footer {
     box-shadow: 0 0 5px black;
     cursor: pointer;
     border: 2px solid white;
-    transition: all .7s;
+    transition: all 0.7s;
     width: 95%;
     /*! margin: auto; */
     /*! padding: 11px; */
     /*! height: 65px; */
 }
 
-.expandible a{
+.expandible a {
     color: #fff;
     text-align: left;
     cursor: pointer;
@@ -189,12 +192,27 @@ footer {
     margin-top: 15px;
 }
 
+.expandible ul {
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+.expandible li {
+    margin-top: 4px;
+}
+
 .oculto {
     display: none;
 }
 
-.img{
+.img {
     display: flex;
     margin: auto;
     justify-content: center;
+}
+
+li span {
+    color: cyan;
+    margin-left: 10px;
+    margin-right: 10px;
 }
