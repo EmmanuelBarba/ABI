@@ -234,6 +234,7 @@ li span {
         border-radius: 0px !important;
         width: 100%;
         position: sticky;
+        top: 0;
     }
 
     footer {
