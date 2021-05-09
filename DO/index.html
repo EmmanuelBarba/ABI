@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div class="btns do">
+        <section class="jcontainer">
+            <article class="code c1">
+                <h4>JS</h4>
+                <p>
+                //Validacion javascript<br><br>
+                (function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;var nombres=document.getElementById("nombre");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;var correos=document.getElementById("correo");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;var enviar=document.getElementById("send");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;enviar.addEventListener("click",verificacion); <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;function verificacion(event) {<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;if (nombres.value=="" || correos.value=="") {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;alert("Faltan datos");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;event.preventDefault();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                }) ();<br><br>
+                //Validacion jQuery<br><br>
+                $(document).ready(function(){<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;$("#form").submit(event => {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;if ($('#nombre').val().length==0 || $('#correo').val().length==0) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;event.preventDefault();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;alert("Faltan datos");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;});<br>
+                });<br>
+
+
+
+                </p>
+            </article>
+        </section>
+        <input class="off" id="off" type="button" value="ocultar">
+        <input class="on" id="on" type="button" value="mostrar">
+    </div>
+    <script src="jQuery.js"></script>
+
+</body>
+</html>
