@@ -229,10 +229,11 @@ li span {
         margin: 0px 0%;
     }
 
-    nav {
+    nav.nav-header {
         margin: 0;
         border-radius: 0px !important;
         width: 100%;
+        position: sticky;
     }
 
     footer {
