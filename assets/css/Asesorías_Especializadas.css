@@ -8,13 +8,13 @@ html,body {
     scroll-behavior: smooth;
 }
 
-header {
+/* header {
   display: flex;
   justify-content:space-between;
   align-items: center;
   padding-left: 30px;
   padding-right: 20px;
-}
+} */
 
 section {
     margin: 0 1em;
@@ -114,7 +114,7 @@ main {
     margin: 10vh 20%;
 }
 
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,18 +123,18 @@ header {
   left: 2px;
   /* margin: 46px; */
   padding-right: 20px;
-}
+} */
 
-.nav-header {
+/* .nav-header {
   z-index: 50;
   overflow: hidden;
   position: sticky;
   top: 10px;
-  border-radius: 5px;
+  border-radius: 5px; */
   /* border: 2px solid; */
-  position: relative;
+  /* position: relative;
   top: -8px;
-}
+} */
 nav {
   background-image: url("../img/liston_pag.png");
   background-size: cover;
@@ -149,14 +149,14 @@ nav {
   /* margin: auto; */
 }
 
-.nav-header {
+/* .nav-header {
   z-index: 50;
   overflow: hidden;
   position: sticky;
   top: 10px;
-  border-radius: 5px;
+  border-radius: 5px; */
   /* border: 2px solid; */
-  position: relative;
+  /* position: relative;
   top: -8px;
   height: 75px;
-}
+} */
