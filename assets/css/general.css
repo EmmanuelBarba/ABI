@@ -106,11 +106,11 @@ main {
 }
 
 main > h1 {
-    font-size: 6vw;
+    font-size: clamp(2rem, 6vw, 4rem);
 }
 
 main > p {
-    font-size: 2.2vw;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
 footer {
@@ -172,6 +172,7 @@ footer {
     /*! margin: auto; */
     /*! padding: 11px; */
     /*! height: 65px; */
+    font-size: 1rem;
 }
 
 .expandible a {
@@ -229,15 +230,29 @@ li span {
         margin: 0px 0%;
     }
 
+    header {
+        overflow: auto;
+    }
+
     nav.nav-header {
         margin: 0;
         border-radius: 0px !important;
         width: 100%;
         position: sticky;
         top: 0;
+        overflow: auto;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    main {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
     }
 
     footer {
-        display: none;
+        overflow: auto;
     }
 }
