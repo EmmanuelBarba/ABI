@@ -217,6 +217,7 @@ li span {
     color: cyan;
     margin-left: 10px;
     margin-right: 10px;
+    display: inline-block;
 }
 
 @media (max-width: 1000px) {
