@@ -1,7 +1,5 @@
 $(function () {
     
-    var r=["rotate(180deg)","rotate(90deg)"]
-    
     for (let pregunta of document.getElementsByClassName("expandible")) {
         let respuesta = pregunta.querySelector("div.oculto");
         let masMenos = pregunta.querySelector("p.masMenos")
@@ -11,11 +9,11 @@ $(function () {
             if( masMenos.innerHTML=="+"){
                 masMenos.innerHTML="-";
                 masMenos.style.transition="all .5s"
-                masMenos.style.transform=r[0];
+                masMenos.style.transform="rotate(180deg)";
             }else{
                 masMenos.innerHTML="+";
                 masMenos.style.transition="all .5s"
-                masMenos.style.transform=r[1];
+                masMenos.style.transform="rotate(90deg)";
 
             }
         };
