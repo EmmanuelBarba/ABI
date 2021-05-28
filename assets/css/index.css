@@ -9,13 +9,16 @@ html,body {
 }
 
 main {
-    margin-top: 10vh;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 20vh;
-    height: 32vh;
+    padding-top: 10vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20vh;
 }
 
 main > h1 {
     margin-bottom: 4vh;
+}
+
+footer {
+    bottom: 0;
 }

@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700,800&amp;display=swap');
 @import url('../fonts/fonts.css');
 
+:root {
+    --morado: #875fff;
+}
+
 html,
 body {
     font-family: 'Roboto';
@@ -16,7 +20,6 @@ body {
 }
 
 body {
-    margin: 0px 8%;
     background-image: linear-gradient(rgb(22 17 60 / 50%), rgb(22 17 60)),
         url('../img/cualtos_auditorio.jpg');
     background-size: cover;
@@ -48,6 +51,10 @@ header > img {
     /*! position: relative; */
 }
 
+header, main {
+    margin: 0px 8%;
+}
+
 nav {
     background-image: url('../img/liston_pag.png');
     background-size: cover;
@@ -69,11 +76,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #875fff;
+    color: var(--morado)
 }
 
 nav a.seleccionado {
-    color: #875fff;
+    color: var(--morado)
 }
 
 nav > div {
@@ -90,6 +97,9 @@ nav > div {
     /*! border: 2px solid; */
     position: relative;
     top: -8px;
+    
+    width: 84%;
+    margin: auto;
 }
 
 nav.nav-header > div {
@@ -114,7 +124,36 @@ main > p {
 }
 
 footer {
-    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/liston_pag.png);
+    background-size: cover;
+    border-top: 1px solid white;
+    color: white;
+    height: 100px;
+    padding: 0 50px;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+footer > div {
+    width: 300px;
+}
+
+#footer-logos {
+    filter: grayscale(1) brightness(50);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer-logos img {
+    height: 60px;
+    margin: 0 15px;
 }
 
 .icon-text {
@@ -122,20 +161,30 @@ footer {
 }
 
 .icon-text img {
-    filter: invert(22%) sepia(80%) saturate(2152%) hue-rotate(208deg)
-        brightness(91%) contrast(94%);
+    /* filter: invert(22%) sepia(80%) saturate(2152%) hue-rotate(208deg)
+        brightness(91%) contrast(94%); */
     margin: auto 20px;
-    /*! color: blue; */
+    height: 50px;
+    /* ! color: blue; */
     /*! background-color: blanchedalmond; */
 }
 
 .icon-text > div {
     font-size: 20px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .icon-text > div a {
     font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon-text > div a:hover {
+    color: var(--morado);
 }
 
 /* Tarjetas */
@@ -168,7 +217,7 @@ footer {
     cursor: pointer;
     border: 2px solid white;
     transition: all 0.7s;
-    width: 95%;
+    width: 99%;
     /*! margin: auto; */
     /*! padding: 11px; */
     /*! height: 65px; */
@@ -184,8 +233,8 @@ footer {
 }
 
 .expandible:hover {
-    border-color: #875fff;
-    /*! color: #875fff; */
+    border-color: var(--morado)
+    /*! color: var(--morado) */
 }
 
 .expandible p {
@@ -221,13 +270,32 @@ li span {
 }
 
 @media (max-width: 1000px) {
-    body {
+    header, main {
         margin: 0px 4%;
+    }
+
+    .nav-header {
+        width: 92%;
+    }
+
+    footer {
+        flex-direction: column;
+        /* padding: 20px 50px; */
+        height: auto;
+    }
+
+    footer > div {
+        margin: 20px;
+    }
+
+    #footer-logos {
+        position: static;
+        transform: none;
     }
 }
 
 @media (max-width: 500px) {
-    body {
+    header, main {
         margin: 0px 0%;
     }
 
@@ -251,29 +319,5 @@ li span {
     main {
         margin-left: 5% !important;
         margin-right: 5% !important;
-    }
-
-    footer {
-        margin-bottom: 0;
-    }
-
-    footer nav {
-        width: 100%;
-        border-radius: 0;
-        display: block;
-        height: auto;
-        background-repeat: round;
-    }
-
-    footer nav > div:not(:last-child) {
-        border: 0;
-        border-bottom: 2px solid white;
-    }
-
-    footer nav > div{
-        height: 70px;
-        width: 100%;
-        align-items: center;
-        padding: 24px;
     }
 }
