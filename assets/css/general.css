@@ -236,7 +236,9 @@ footer > div {
     border-color: var(--morado)
     /*! color: var(--morado) */
 }
-
+.masMenos {
+    float: right;
+}
 .expandible p {
     font-size: 1.2em;
     margin-top: 15px;
@@ -268,6 +270,7 @@ li span {
     margin-right: 10px;
     display: inline-block;
 }
+
 
 @media (max-width: 1000px) {
     header, main {
