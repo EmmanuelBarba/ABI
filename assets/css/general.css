@@ -8,8 +8,8 @@
 
 html,
 body {
-    /*font-family: 'Roboto';*/
-    font-family: 'Barlow Condensed'; 
+    font-family: 'Roboto';
+    /*font-family: 'Barlow Condensed'; */
     scroll-behavior: smooth;
 }
 
@@ -67,6 +67,7 @@ nav {
     border-radius: 5px;
     width: 95%;
     margin: auto;
+    overflow: hidden;
 }
 
 nav a {
@@ -99,7 +100,6 @@ nav > div {
     /*! border: 2px solid; */
     position: relative;
     top: -8px;
-    
     width: 84%;
     margin: auto;
 }
@@ -112,6 +112,43 @@ nav > div:not(:last-child) {
     border-right: 2px solid white;
 }
 
+.sesgo{
+    height: 65px;
+    border-width: 65px 0 0 23px;
+    border-style: solid;
+    border-color:  rgba(0,0,0,0.5) transparent transparent transparent;
+    transition: all .2s;
+    overflow: hidden;
+}
+
+.sesgo a{
+    position: absolute;
+    top: 33%;
+}
+
+.sesgo:hover{
+    border-color:  white transparent transparent transparent;
+    color:black;
+}
+
+.sesgo:hover a{
+    color:black;
+    transform: translateX(-30px);
+    text-shadow: 1px 1px 2px black;
+}
+
+.sesgo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 35px;
+    height: 100%;
+    background-color: white;
+    transform: skew(20deg);
+    
+    overflow: hidden;
+}
 
 main {
     text-align: center;
@@ -348,7 +385,7 @@ li span {
         width: 100%;
         position: sticky;
         top: 0;
-        overflow: auto;
+        overflow: hidden;
     }
 
     nav a {
