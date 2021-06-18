@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABI</title>
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/ABI.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/floating-wpp.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -135,6 +136,16 @@
         <h1>Hola, soy ABI</h1>
         <p>Tu asesor virtual, para que puedas prepararte para emprender. (¿qué es ABI?) (Mencionar al CIIO) (dar instrucciones al usuario sobre el funcionamiento de la página)</p>
     </main>
+    <!-- ABI Chatbot---------------------------------------------------------->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="ABI - Asesora virtual"
+      agent-id="e1a25161-7223-48f1-a4cb-49909d4743bd"
+      chat-icon="img/ABI-bot.png"
+      language-code="es"
+    ></df-messenger>
+    <!------------------------------------------------------------------------>
     <footer>
         <div id="footer-logos">
             <img src="img/ciio_logo.png" alt="CIIO">
@@ -144,7 +155,7 @@
         <div class="icon-text">
             <img src="svg/mail.svg" alt="Correo">
             <div>
-                <p>If any query:</p>
+                <p>Contacta con nosotros</p>
                 <a href="mailto:ciio@cualtos.udg.mx">ciio@cualtos.udg.mx</a>
             </div>
         </div>
